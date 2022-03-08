@@ -36,7 +36,7 @@ sudo chmod 777 /mnt/share/
 sudo vi /etc/exports
 
 
-#/mnt/share/ <clientIP or Clients CIDR>(rw,sync,no_subtree_check,no_root_squash)
+/mnt/share/ <clientIP or Clients CIDR>(rw,sync,no_subtree_check,no_root_squash)
  #Ex:
  
 /mnt/share/ *(rw,sync,no_subtree_check,no_root_squash)
