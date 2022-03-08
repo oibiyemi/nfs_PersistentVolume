@@ -2,8 +2,8 @@
 #Provisioning an NFS Server
 
 
-Configuration of NFS Server
-  NFS = Network file system 
+#Configuration of NFS Server
+  #NFS = Network file system 
         #distributed file system 
         #shared file system 
 
@@ -26,7 +26,7 @@ sudo apt install nfs-kernel-server -y
 
 sudo mkdir -p /mnt/share/
 
-=# As we want all clients to access the directory, we will remove restrictive permissions.
+# As we want all clients to access the directory, we will remove restrictive permissions.
 
 sudo chown nobody:nogroup /mnt/share/
 sudo chmod 777 /mnt/share/
@@ -43,7 +43,7 @@ sudo vi /etc/exports
 
 #Step 4: Export the shared directory
 
-$ sudo exportfs -a
+sudo exportfs -a
 
 sudo systemctl restart nfs-kernel-server
 
@@ -55,9 +55,9 @@ sudo systemctl restart nfs-kernel-server
 #Step 1: Install NFS Common
 #Before installing the NFS Common application, we need to update our system’s repository index with that of the #Internet through the following apt command as sudo:
 
-$ sudo apt-get update && sudo apt-get install nfs-common -y
+sudo apt-get update && sudo apt-get install nfs-common -y
 
-$ sudo apt-get install nfs-common
+sudo apt-get install nfs-common
 
  
 
