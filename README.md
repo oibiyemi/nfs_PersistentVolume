@@ -39,7 +39,8 @@ sudo vi /etc/exports
 /mnt/share/ <clientIP or Clients CIDR>(rw,sync,no_subtree_check,no_root_squash)
  #Ex:
  
-/mnt/share/ *(rw,sync,no_subtree_check,no_root_squash)
+/mnt/share/ *(rw,sync,no_subtree_check,no_root_squash)  
+  /* This gives global access to all the servers*/
 
 #Step 4: Export the shared directory
 
